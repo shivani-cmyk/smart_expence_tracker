@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Smart Expense Tracker</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 40px; max-width: 900px; margin: auto; }
+    a { display:inline-block; margin:10px 0; }
+    code { background:#f4f4f4; padding:4px 6px; }
+  </style>
+</head>
+<body>
+  <h1>Smart Expense Tracker</h1>
+  <p>Quick start:</p>
+  <ol>
+    <li>Register via <code>POST /auth/register</code> with JSON <code>{"email":"you@example.com","password":"pass"}</code></li>
+    <li>Get token via <code>POST /auth/token</code> (form data: username, password)</li>
+    <li>Use token to call endpoints under <code>/transactions</code></li>
+  </ol>
+
+  <p>Open the interactive docs: <a href="/docs">Swagger UI</a> or <a href="/redoc">ReDoc</a>.</p>
+  <p>After login, visit the dashboard at <a href="/transactions/dashboard">/transactions/dashboard</a> (Bearer token required).</p>
+</body>
+</html>
